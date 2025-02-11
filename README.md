@@ -36,4 +36,31 @@ Avant de lancer l'application, assurez-vous d'avoir les outils suivants install�
    http://localhost:8501
    ```
 
+## Utilisation
+
+1. Ouvrez votre navigateur et accédez à l'URL locale de Streamlit.
+2. Téléchargez une image via l'interface Streamlit.
+3. L'image sera envoyée à l'API FastAPI, qui effectuera la prédiction.
+4. Le résultat de la prédiction indiquera si l'image est recyclable ou non avec une probabilite.
+
+## Structure du projet
+
+Le projet est organisé comme suit :
+   ```bash
+   ├── app/
+   │   ├── api/               # Contient l'API FastAPI
+   │   ├── model/             # Modèle ML au format .h5
+   │   └── streamlit_app/     # Application Streamlit
+   ├── docker-compose.yml     # Fichier de configuration Docker Compose
+   └── README.md              # Ce fichier
+   ```
+
+## Technologies utilisées
+
+    - FastAPI pour l'API REST
+    - Streamlit pour l'interface utilisateur
+    - TensorFlow/Keras pour le modèle de machine learning
+    - Docker pour la conteneurisation
+
+
 
