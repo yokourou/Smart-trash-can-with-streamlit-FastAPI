@@ -1,0 +1,1 @@
+# Smart-trash-can-with-streamlit-FastAPI
